@@ -1,0 +1,74 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+.container{
+display: grid;
+height: 100vh;
+grid-template-columns: 1.9fr 1.1fr 1.1fr 1.1fr;
+grid-template-rows: 0.7fr 2fr 1.2fr 0.3fr;
+grid-template-areas: "nav nav nav nav"
+                    "main main main main"
+                         "conteudo1 conteudo2 conteudo3 conteudo4"
+                         "footer footer footer footer";
+grid-gap: 0.5em;
+}
+
+#nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: aliceblue;
+grid-area: nav;
+border-radius: 0.8em;
+}
+#nav img{
+margin-left: 60px;
+padding: 10px;
+height: 100px;
+width: 100px;
+}
+#nav a{
+ text-decoration: none;
+ font-size: 22px;
+ margin-left: 20px;
+ margin-right: 20px;
+ padding: 15px;
+ color: black;
+ text-align: center;
+}
+#menu a:hover{
+background-color: lavender;
+color: white;
+}
+#main{
+background-color: thistle;
+grid-area: main;
+border-radius: 0.8em;
+}
+#conteudo1{
+background-color: darkviolet;
+grid-area: conteudo1;
+border-radius: 1.8em;
+}
+#conteudo2{
+background-color: pink;
+grid-area: conteudo2;
+border-radius: 0.8em;
+}
+#conteudo3{
+background-color: lightpink;
+grid-area: conteudo3;
+border-radius: 0.8em;
+}
+#conteudo4{
+background-color: skyblue;
+grid-area: conteudo4;
+border-radius: 0.8em;
+}
+#footer{
+background-color: yellow;
+grid-area: footer;
+border-radius: 0.8em;
+}
